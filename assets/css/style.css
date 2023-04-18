@@ -1,0 +1,552 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.row {
+    margin: 0px -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding: 0px 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-two {
+    width: 50%;
+    padding: 0px 8px;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+/* 
+    1.từ ngoài vào trong
+    2.từ trên xuống dưới 
+    3.tổng quan đến chi tiết
+ */
+/*  1. vị trí
+    2. kích thước
+    3. màu sắc
+    4. kiểu dáng
+ */
+#main {
+
+}
+
+#header {
+    height: 48px;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a {
+    color: aliceblue;
+    text-transform: uppercase  ;
+}
+
+#nav li a{
+    
+    text-decoration: none;
+    line-height: 48px;
+    padding: 0 24px 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    min-width: 160px;
+    position: absolute;
+    color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 12px;
+    line-height: 38px ;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .menu-mobile-btn {
+    float: right;
+    display: none;
+}
+#header .search-button {
+    float: right;
+    
+}
+
+#header .search-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+ 
+#header .ti-menu,
+#header .ti-search {
+    color: #fff;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 14px 21px;
+}
+#header .menu-mobile-btn:hover .ti-menu{
+    background-color: #ccc;
+    color: #000000;
+}
+
+#slider {
+    padding-top: 50%;
+    margin-top: 48px;
+    background: url('../img/Rukes-photography-echosmith-concerts-band-music-1333359-wallhere.com.jpg') top center / cover no-repeat ;
+    position: relative;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+}
+
+#slider .text-description {
+    margin-top: 20px;
+    text-shadow: 2px 2px 1px black;
+}
+
+
+#content {
+    
+}
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 112px 16px;
+}
+
+#content .content-header {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .sub-header {
+    text-align: center;
+    margin: 24px 0px;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+#content .about-text {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+
+
+#content .member {
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+    margin: 47px 0;
+}
+
+#content .member-img {
+    width: 154px;
+    border-radius: 4px;
+}
+
+#tour-section {
+    background-color: black;
+}
+
+.ticker-list {
+    background-color: #fff;
+    font-size: 15px;
+    list-style-type: none;
+    color: #757575;
+}
+
+.ticker-list li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticker-list .sold-out {
+    background-color: #f44336;
+    color: #ffffff;
+    padding: 4px 8px;
+    margin-left: 16px;
+}
+
+.ticker-list .quality {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000000 ;
+    color: #ffffff;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
+.place-list {
+    margin-top: 32px;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #ffffff;
+    font-size: 15px;
+    padding: 16px 16px;
+}
+
+.place-body .place-name {
+    margin: 15px 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-body .place-time {
+    margin: 15px 0px;
+    color: #757575;
+}
+
+.place-body .place-desc {
+    line-height: 1.4;
+    margin: 15px 0px;
+}
+
+.place-body .place-btn {
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: inline-block;
+    border: none;
+}
+
+.place-body .place-btn:hover {
+    background-color: #ccc;
+    color: #000000;
+}
+
+.contect-info {
+    line-height: 1.5;
+}
+
+.contect-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.form-control {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.contect-submit-btn{
+    float: right;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 9px 15px;
+}
+
+.contect-submit-btn:hover {
+    opacity: 0.6;
+}
+
+.map-section img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+#footer .social-list a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.copyright, .copyright a {
+    margin: 15px 0;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.modal-contener {
+    width: 900px;
+    max-width: calc(100% - 46px);
+    min-height: 200px;
+    background-color: #ffffff;
+    position: relative;
+    animation: modalfadein ease 0.5s;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.modal-close:hover {
+    background-color: #f44336;
+}
+
+.modal-header {
+    background-color: #009688;
+    text-align: center;
+    padding: 47px 16px;
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.modal-body {
+    padding: 16px;
+    font-size: 15px;
+}
+
+.tickets {
+    display: block;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.modal-input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.modal-pay {
+    border: none;
+    width: 100%;
+    background-color: #009688;
+    padding: 20px;
+    margin: 16px 0px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.modal-pay:hover {
+    opacity: 0.7;
+}
+
+.modal-footer {
+    text-align: right;
+    padding: 16px;
+}
+
+.modal-footer a {
+    color: #009688;
+}
+
+/* mobile */
+@media screen and (max-width: 46.1875em) {
+    #header {
+        overflow: hidden;
+    }
+    #nav {
+        display: block;
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav > li:first-child {
+        display: inline-block;
+    }
+    #nav .subnav {
+        position: inherit;
+        background: #757575;
+    }
+    #nav .subnav a {
+        color: #fff;
+        padding: 6px 32px;
+        text-transform: uppercase;
+    }
+    #slider .text-content {
+        display: none;
+    }
+    #header .search-button {
+        display: none;
+    }
+
+    #content .member-img {
+        width: 195px;
+    }
+
+    .member {
+        width: 100%;
+    }
+    .place-section {
+        width: 100%;
+        padding: 8px;
+    }
+    .place-body .place-btn {
+        width: 100%;
+    }
+    .contect-info {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .contact-mobile {
+        padding-top: 32px;
+        font-size: 18px;
+    }
+    .form-mobile {
+        width: 100%;
+    }
+    #header .menu-mobile-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .contect-submit-btn {
+        width: 100%;
+    }
+    #footer .social-list a {
+        font-size: 48px;
+        margin: 0px 8px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .place-body .place-btn {
+        width: 100%;
+        padding: 16px 16px;
+    }
+
+    .contect-info {
+        font-size: 18px;
+    }
+    .contect-submit-btn {
+        width: 100%;
+        padding: 14px 0px;
+    }
+    #footer .social-list a {
+        font-size: 48px;
+        margin: 0px 8px;
+    }
+}
+
+@keyframes modalfadein {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
